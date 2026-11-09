@@ -16,9 +16,13 @@ public class Studyno {
             BLACK + "  ╚══════╝   ╚═╝    ╚═════╝ ╚═════╝    ╚═╝   " + WHITE + " ╚═╝  ╚═══╝ ╚═════╝" +
             RESET
         );
-        System.out.println(WHITE + "==========================================" + RESET);
+        System.out.println(WHITE + "========================================================================" + RESET);
         System.out.println(WHITE + "Version: 1.0.0" + RESET);
         System.out.println(WHITE_YES + "Welcome to the Studyno Terminal Application!" + RESET);
+        System.out.println(WHITE_YES + "========================================================================" + RESET);
+        System.out.println("[1] Let's do it");
+        System.out.println("[2] Donation page");
+        
     }
 
 }
