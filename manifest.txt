@@ -1,2 +1,2 @@
-Main-Class: Studyno
+Main-Class: Main
 
