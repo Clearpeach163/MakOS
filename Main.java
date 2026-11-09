@@ -1,21 +1,24 @@
-import java.io.File;
+
 
 public class Main {
     public static void main(String[] args) {
-        File file = new File("user.properties"); // Create a File object for the user.properties file
-        if (file.exists()) { // Check if the file exists
-            // YES the file exists, That means the user already has a login account
-            loginWindow();
-        } else {
-            // No the file doesnt exist, Let's create a user file!
-            createUserwindow();
-        }
-    }
-    public static void loginWindow() {
-        Login.show();
+        String RESET = "\u001B[0m";
+        String WHITE_YES = "\u001B[97m";
+        String WHITE = "\u001B[38;5;220m";
+        String BLACK = "\u001B[97m";
+                System.out.println(
+            WHITE +
+            BLACK + "  ███████╗████████╗██╗   ██╗██████╗ ██╗   ██╗" + WHITE + " ███╗   ██╗ ██████╗\n" +
+            BLACK + "  ██╔════╝╚══██╔══╝██║   ██║██╔══██╗╚██╗ ██╔╝" + WHITE + " ████╗  ██║██╔═══██╗\n" +
+            BLACK + "  ███████╗   ██║   ██║   ██║██║  ██║ ╚████╔╝ " + WHITE + " ██╔██╗ ██║██║   ██║\n" +
+            BLACK + "  ╚════██║   ██║   ██║   ██║██║  ██║  ╚██╔╝  " + WHITE + " ██║╚██╗██║██║   ██║\n" +
+            BLACK + "  ███████║   ██║   ╚██████╔╝██████╔╝   ██║   " + WHITE + " ██║ ╚████║╚██████╔╝\n" +
+            BLACK + "  ╚══════╝   ╚═╝    ╚═════╝ ╚═════╝    ╚═╝   " + WHITE + " ╚═╝  ╚═══╝ ╚═════╝" +
+            RESET
+        );
+        System.out.println(WHITE + "==========================================" + RESET);
+        System.out.println(WHITE + "Version: 1.0.0" + RESET);
+        System.out.println(WHITE_YES + "Welcome to the Studyno Terminal Application!" + RESET);
     }
 
-    public static void createUserwindow() {
-        CreateUser.show();
-    }
 }
